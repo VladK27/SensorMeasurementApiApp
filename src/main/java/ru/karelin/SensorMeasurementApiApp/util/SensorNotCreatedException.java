@@ -6,6 +6,9 @@ package ru.karelin.SensorMeasurementApiApp.util;
  * @author Vlad
  */
 public class SensorNotCreatedException extends RuntimeException{
+    public SensorNotCreatedException() {
+    }
+
     public SensorNotCreatedException(String message){
         super(message);
     }

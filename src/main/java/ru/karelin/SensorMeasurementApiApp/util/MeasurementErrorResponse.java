@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Setter
 @Getter
 @AllArgsConstructor
-public class SensorErrorResponse {
+public class MeasurementErrorResponse {
     private String message;
     private LocalDateTime time;
 }

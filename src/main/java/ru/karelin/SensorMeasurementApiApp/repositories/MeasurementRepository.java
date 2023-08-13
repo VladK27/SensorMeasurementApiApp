@@ -2,9 +2,7 @@ package ru.karelin.SensorMeasurementApiApp.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.karelin.SensorMeasurementApiApp.models.Sensor;
-
-import java.util.Optional;
+import ru.karelin.SensorMeasurementApiApp.models.Measurement;
 
 /**
  * Created by Vlad on 13.08.2023.
@@ -12,6 +10,6 @@ import java.util.Optional;
  * @author Vlad
  */
 @Repository
-public interface SensorRepository extends JpaRepository<Sensor, Integer> {
-    Optional<Sensor> findByName(String name);
+public interface MeasurementRepository extends JpaRepository<Measurement, Integer> {
+    Long countAllByRaining(Boolean raining);
 }
